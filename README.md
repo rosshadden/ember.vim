@@ -199,6 +199,34 @@ For Eg:- To change the template for models use,
 }
 ```
 
+### Pods
+
+The following `portkey.json` may be used as a starting point for working on
+projects with pods:
+
+
+```json
+{
+  "portkeys": ["ember"],
+  "app/pods/*/controller.js": {
+    "type": "controller"
+  },
+  "app/pods/*/route.js": {
+    "type": "route"
+  },
+  "app/pods/*/template.hbs": {
+    "type": "template"
+  },
+  "app/pods/*/view.js": {
+    "type": "view"
+  },
+  "app/pods/components/*.js": {
+    "type": "component"
+  }
+}
+```
+
+
 ## System Requirements
 
 Ember.vim is an extension of [Portkey][2]. See [here][4]
